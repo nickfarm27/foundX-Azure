@@ -7,7 +7,7 @@
 - [datasets](#datasets)
 
 ## Dataset Features Explanation
-The [raw dataset](https://github.com/nickfarm27/foundX-Azure/blob/main/datasets/raw_dataset.csv) is a collection of 17 socio-economic factors and health status data of a population from counties of 26 states in the United States. The description of each feature of the dataset shown in the table below. The column 'Accepted Range of Values' is a guide on what values are accepted for the [regression model](https://github.com/nickfarm27/foundX-Azure/blob/main/AutoML/regression.py).
+The [raw dataset](https://github.com/nickfarm27/foundX-Azure/blob/main/datasets/raw_dataset.csv) is a collection of 17 socio-economic factors and health status data of a population from the counties of 26 selected states in the United States. The description of each feature of the dataset shown in the table below. The column 'Accepted Range of Values' is a guide on what values are accepted for the [regression model](https://github.com/nickfarm27/foundX-Azure/blob/main/AutoML/regression.py).
 
 Feature  | Description | Accepted Range of Values
 ------------- | ------------- | -------------
@@ -26,7 +26,7 @@ High School Graduation Rate | Graduation rate | 0 - 100
 % Children in Poverty | Percentage of children (under age 18) living in poverty | 0 - 100
 Income Ratio | Ratio of household income at the 80th percentile to income at the 20th percentile | 0 - 10
 % Single-Parent Households | Percentage of children that live in single-parent households | 0 - 100
-Violent Crime Rate | Violent crimes per 100,000 population | 0 - 100,000
+Violent Crime Rate | Violent crimes per 100,000 population | 0 - 2,000
 Average Daily PM2.5 | Average daily amount of fine particulate matter in micrograms per cubic meter | 5 - 20
 % Severe Housing Problems | Percentage of households with at least 1 of 4 housing problems: overcrowding, high housing costs, or lack of kitchen or plumbing facilities | 0 - 100
 

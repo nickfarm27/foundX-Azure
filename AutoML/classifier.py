@@ -13,7 +13,7 @@ allowSelfSignedHttps(True) # this line is needed if you use self-signed certific
 data = {
     "data":
     [
-        {
+        {   #? Change the values to any integer values from 1 to 5
             'smokers_pc': "0",
             'adults_obese_pc': "0",
             'food_env_index': "0",

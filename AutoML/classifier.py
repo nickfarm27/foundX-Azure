@@ -13,7 +13,7 @@ allowSelfSignedHttps(True) # this line is needed if you use self-signed certific
 data = {
     "data":
     [
-        {   #? Change the values to any integer values from 1 to 5
+        {   #? Change the values to any integer values from 1 to 5 (as all feature values are binned into 5 bins)
             'smokers_pc': "0",
             'adults_obese_pc': "0",
             'food_env_index': "0",
@@ -31,6 +31,7 @@ data = {
             'crime_rate': "0",
             'avg_daily_pm2.5': "0",
             'severe_housing_prob': "0",
+            #? Once all your preferred values have been set, run the python file and the results will be shown in the terminal
         },
     ],
 }

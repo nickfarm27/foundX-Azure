@@ -13,7 +13,8 @@ allowSelfSignedHttps(True) # this line is needed if you use self-signed certific
 data = {
     "data":
     [
-        {
+        {   #? Change the values below to any value within the acceptable range of the feature. 
+            #? To know the range of acceptable values for the regression model, kindly refer to the README file in the GitHub repository here: https://github.com/nickfarm27/foundX-Azure#dataset-features-explanation
             '% Smokers': "0",
             '% Adults with Obesity': "0",
             'Food Environment Index': "0",
@@ -31,6 +32,7 @@ data = {
             'Violent Crime Rate': "0",
             'Average Daily PM2.5': "0",
             '% Severe Housing Problems': "0",
+            #? Once all your preferred values have been set, run the python file and the results will be shown in the terminal
         },
     ],
 }

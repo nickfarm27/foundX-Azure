@@ -1,13 +1,13 @@
 # foundX-Azure
 - - - -
 ## Table of Contents
-- [Dataset Features Explanation](#Dataset-Features-Explanation "Goto Dataset-Features-Explanation")
-- [AutoML](#AutoML "Goto AutoML")
-- [Designer](#Designer "Goto Designer")
-- [datasets](#datasets "Goto datasets")
+- [Dataset Features Explanation](#Dataset-Features-Explanation)
+- [AutoML](#AutoML)
+- [Designer](#Designer)
+- [datasets](#datasets)
 
 ## Dataset Features Explanation
-The raw dataset is a collection of 17 socio-economic factors and health status data of a population from counties of 26 states in the United States. The description of each feature of the dataset shown in the table below. The column 'Accepted Range of Values' is a guide on what values are accepted for the regression model.
+The [raw dataset](https://github.com/nickfarm27/foundX-Azure/blob/main/datasets/raw_dataset.csv) is a collection of 17 socio-economic factors and health status data of a population from counties of 26 states in the United States. The description of each feature of the dataset shown in the table below. The column 'Accepted Range of Values' is a guide on what values are accepted for the [regression model](https://github.com/nickfarm27/foundX-Azure/blob/main/AutoML/regression.py).
 
 Feature  | Description | Accepted Range of Values
 ------------- | ------------- | -------------
@@ -30,8 +30,17 @@ Violent Crime Rate | Violent crimes per 100,000 population | 0 - 100,000
 Average Daily PM2.5 | Average daily amount of fine particulate matter in micrograms per cubic meter | 5 - 20
 % Severe Housing Problems | Percentage of households with at least 1 of 4 housing problems: overcrowding, high housing costs, or lack of kitchen or plumbing facilities | 0 - 100
 
-## AutoML
+## [AutoML](https://github.com/nickfarm27/foundX-Azure/tree/main/AutoML)
+Contains the Python scripts to test custom input data on the deployed models from Automated ML.
+- Regression Model - https://github.com/nickfarm27/foundX-Azure/blob/main/AutoML/regression.py
+- Classification Model - https://github.com/nickfarm27/foundX-Azure/blob/main/AutoML/classifier.py
 
-## Designer
+## [Designer](https://github.com/nickfarm27/foundX-Azure/tree/main/Designer)
+Contains the Python scripts used in the 'Execute Python Script' module of our Designer pipeline.
+[pythonscript1.py](https://github.com/nickfarm27/foundX-Azure/blob/main/Designer/pythonscript1.py) is used to generate the association rules.
+[pythonscript2.py](https://github.com/nickfarm27/foundX-Azure/blob/main/Designer/pythonscript2.py) is used to run K-means clustering and assign tiers to the rules.
 
-## datasets
+## [datasets](https://github.com/nickfarm27/foundX-Azure/tree/main/datasets)
+Contains the raw dataset that is imported into Azure Machine Learning Designer and the output dataset that consists of the generated rules with their tier values.
+- Raw Dataset - https://github.com/nickfarm27/foundX-Azure/blob/main/datasets/raw_dataset.csv
+- Output Dataset - https://github.com/nickfarm27/foundX-Azure/blob/main/datasets/output_rules.csv
